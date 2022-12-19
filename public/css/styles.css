@@ -1,0 +1,267 @@
+@import url(normalize.css);
+:root {
+    --amarillo: #EAC926;
+    --fondo: #eeeff2;
+}
+header{ background-color: var(--amarillo);
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-right: 0px;
+    padding-bottom: 2rem;
+    padding-left: 0px;
+    flex-direction: row;
+}
+.ML{
+    width: 45%;
+    }
+.barra_busqueda{
+    background-color: #ffffff;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+    }
+.lugarbusqueda{
+    width: 100%;
+    display: inline;
+}
+.lugarbusqueda input {
+    width: 100%;
+}
+
+.compracard{
+    
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+
+.lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+    
+.compracard{
+        text-align: center;
+}
+nav {
+        display: none;
+}
+
+
+
+
+
+.burger-menu{padding-bottom: 1rem;
+    color: white;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.burger{ color:antiquewhite;
+    background-color: #4681f8;
+    border-radius: 10%;
+    font-size: large;
+    padding: 10px;
+}
+
+   
+
+body{
+    font-family: 'Reboto', "sans-serif";
+    background-color: var(--fondo);
+   
+}
+header{ width: 90vw;
+    
+    box-sizing: content-box;}
+
+h1{
+    text-align: center;
+}
+.main {
+    
+    width: 90%;
+    margin: auto;
+}
+.titular{
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0;
+}
+.producto {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+ 
+   
+}
+.tarjeta{
+    color: #1259c3;
+    font-size: 2em;
+    
+}
+.regalo{color: #1259c3;
+    font-size: 2em;
+    }
+.seguridad{color: #1259c3;
+    font-size: 2em;
+   }
+
+.grisclaro{
+    color:#666;
+}
+.precio{
+    font-size: 18px;
+    margin-left: 3%;
+    margin-bottom: 1px;
+}
+
+.botones_footer{ 
+    margin-bottom: 5px;
+    margin-top: 20px;}
+
+
+.mp_srl{
+    color: black;
+    margin-left: 20px;
+}
+
+
+
+.image{
+    width: 90vw;
+}
+
+
+.descripcion_producto{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 1rem;
+}
+.descripcion_producto i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: -15px;
+    transition: ease-out transform .5s, ease-out right .5s;
+}
+.precio_y_descuento {
+    display: flex;
+}
+.precio {
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+p, li {
+    font-size: 12px;
+}
+.descuento {
+    color: #39b54a;
+
+}
+
+
+.ultima_visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+.imagen{
+    max-width: 100%;
+}
+.main {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+
+
+/*--------TABLET--------*/
+@media (min-width: 361px){
+    
+    .barra_busqueda{
+            width: 30%;
+    }
+    .compracard {
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+    }
+    .izq_der_nav {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .burger-menu{
+        display: none;
+    
+    }
+    .producto {
+        width: 180px;
+    }
+    .precio {
+        font-size: 0.8rem;
+    }
+    .ultima_visita, .ofertas {
+        justify-content: space-between;
+    }
+
+}
+
+    .producto:hover{
+        background-color: rgb(80, 80, 80);
+    }
+
